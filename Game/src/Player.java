@@ -70,6 +70,7 @@ public class Player {
 	}
 
 	public void draw(Graphics2D g2d, Player player) {
+		Bullet bullet = new Bullet(player);
 		g2d.setColor(Color.BLACK);
 		g2d.fillRect(xPos, yPos, xSize, ySize);
 
@@ -88,7 +89,6 @@ public class Player {
 		//g2d.drawString(locaInfo, player.getX() - 100, player.getY() + 80);
 
 		if(shoot() == true) {
-			Bullet bullet = new Bullet(player);
 			bullet.draw(g2d);
 		}
 	}

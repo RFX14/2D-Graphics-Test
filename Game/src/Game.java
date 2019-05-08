@@ -60,24 +60,30 @@ public class Game extends JPanel implements ActionListener{
 		super.paint(g);
 		Graphics2D g2d = (Graphics2D) g;
 
+		/*
 		tree1.draw(g2d);
 		tree2.draw(g2d);
 		tree3.draw(g2d);
 		tree4.draw(g2d);
 		tree5.draw(g2d);
+		*/
 
-		build1.draw(g);
+		//build1.draw(g);
 
 		player.draw(g2d, player);
+		bullet.draw(g2d);
 		obstacle.draw(g2d);
 
-		build2.draw(g);
+		//build2.draw(g);
 
-		tree6.draw(g2d);
+		//tree6.draw(g2d);
+
+		/*
 		tree7.draw(g2d);
 		tree8.draw(g2d);
 		tree9.draw(g2d);
 		tree10.draw(g2d);
+		*/
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 	}
 
